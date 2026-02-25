@@ -24,10 +24,10 @@ theorem easy : 2 + 2 = 4 :=
 
 #check easy
 
-theorem hard : FermatLastTheorem :=
-  sorry
+-- theorem hard : FermatLastTheorem :=
+--   sorry
 
-#check hard
+-- #check hard
 
 -- Here are some proofs.
 example : ∀ m n : Nat, Even n → Even (m * n) := fun m n ⟨k, (hk : n = k + k)⟩ ↦
@@ -52,4 +52,3 @@ example : ∀ m n : Nat, Even n → Even (m * n) := by
 
 example : ∀ m n : Nat, Even n → Even (m * n) := by
   intros; simp [*, parity_simps]
-
